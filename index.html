@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Clipboard Share Mini</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Clipboard Share Mini</h1>
+
+  <!-- Mode selection -->
+  <div class="mode-selection">
+    <button id="sendModeBtn">Send Data</button>
+    <button id="recvModeBtn">Receive Data</button>
+  </div>
+
+  <!-- Send panel -->
+  <div id="sendPanel" class="panel hidden">
+    <h2>Send Data</h2>
+    <textarea id="sendText" placeholder="Enter your text here..."></textarea>
+    <input id="sendId" type="text" placeholder="Enter Data ID (e.g. abc123)">
+    <button id="sendBtn">Send</button>
+  </div>
+
+  <!-- Receive panel -->
+  <div id="recvPanel" class="panel hidden">
+    <h2>Receive Data</h2>
+    <input id="recvId" type="text" placeholder="Enter Data ID...">
+    <button id="recvBtn">Fetch</button>
+    <div id="recvResult"></div>
+    <button id="copyBtn" class="hidden">Copy</button>
+    <button id="deleteBtn" class="hidden">Delete</button>
+  </div>
+
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-database-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
