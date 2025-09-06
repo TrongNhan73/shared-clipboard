@@ -15,8 +15,7 @@ You can use Shared Clipboard directly from your browser. No need to install anyt
 ### Live Demo
 
 Access the app at:  
-`https://<your-github-username>.github.io/shared-clipboard/`  
-*(Update this link after enabling GitHub Pages in your repository settings.)*
+👉 [Live Demo](https://trongnhan73.github.io/shared-clipboard/)
 
 ## How to Use
 
